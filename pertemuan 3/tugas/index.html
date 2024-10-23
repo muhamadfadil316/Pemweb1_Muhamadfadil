@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemesanan Barang</title>
+</head>
+<fieldset>
+<body style="
+      max-width: 600px; display: flex; flex-direction: column; justify-content: center;
+      align-items: center;
+      margin: auto;
+    ">
+  <header style="width: 100%; margin-bottom: 24px">
+    <nav>
+      <ul style="display: flex; gap: 32px; list-style: none; padding: 12px; border: 1px solid #f8ecca; justify-content: center;
+          ">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Generate Link </a>
+        </li>
+        <li><a href="#">Transaction History</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div style="display: flex; justify-content: space-between; gap: 32px; width: 100%;">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
+      <img src="../img/iphone15.jpg" width="300" src="https://ibox.co/300" alt="ibox" />
+      <button style="width: fit-content; padding: 8px 16px">
+        Upload Picture
+      </button>
+    </div>
+
+    <form action="./order.html" style="display: flex; flex-direction: column; gap: 16px; width: 100%">
+      <div>
+        <label for="title">Title Here: </label>
+        <input required id="title" name="title" style="width: 100%" />
+      </div>
+      <div>
+        <label for="description">Description: </label>
+        <input required id="description" name="description" style="width: 100%" />
+      </div>
+      <div>
+        <label for="account-number">Account Number: </label>
+        <input required type="number" id="account-number" name="account-number" style="width: 100%" />
+      </div>
+      <div>
+        <label for="bank">Bank: </label>
+        <select id="bank" name="bank" style="width: 100%">
+          <option value="">--Pilih Bank--</option>
+          <option>Bank BCA</option>
+          <option>Bank BRI</option>
+          <option>Bank BNI</option>
+          <option>Bank EMOK</option>
+          <option>Sea BANK</option>
+        </select>
+      </div>
+      <div>
+        <label for="account-holder">Account Holder: </label>
+        <input required id="account-holder" name="account-holder" style="width: 100%" />
+      </div>
+      <div>
+        <label for="transaction">Transaction: </label>
+        <input required type="number" id="transaction" name="transaction" style="width: 100%" />
+        <p style="font-size: 12px; margin-top: 4px">
+          * if the transaction is for 3 persons, choose 3 from the drop-down
+          list
+        </p>
+      </div>
+      <div style="display: flex; gap: 12px">
+        <div><input type="checkbox" id="mobile_phone" name="mobile_phone" value="mp"><span style="color: #10b916;">Send to Mobile Phone</span>
+        </div>
+        <div>
+        <input type="checkbox" id="email" name="email" value="em"><span style="color: #10b916;">Send to Email</span>
+        </div>
+      </div>
+
+      <div>
+        <label for="mobile_phone">Mobile Phone: </label>
+        <input required id="mobile_phone" name="mobile_phone" style="width: 100%" />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input required id="email" name="email" style="width: 100%" />
+      </div>
+
+      <button type="submit" style="padding: 10px 16px; background-color: #28a745; width: fit-content">
+        Pesan Sekarang
+      </button>
+    </form>
+  </div>
+  </fieldset>
+</body>
+
+</html>

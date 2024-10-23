@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesanan</title>
+</head>
+
+<body style="max-width: 600px; display: flex; flex-direction: column; justify-content: center;
+      align-items: center;
+      margin: auto;
+    ">
+  <header style="width: 100%; margin-bottom: 24px">
+    <nav>
+      <ul style="display: flex; gap: 32px; list-style: none; padding: 12px; border: 1px solid #f8ecca;
+            justify-content: center;
+          ">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Generate Link </a>
+        </li>
+        <li><a href="#">Transaction History</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div style="display: flex; justify-content: space-between; gap: 32px; width: 100%;
+      ">
+    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;
+        ">
+      <img src="../img/iphone15.jpg" width="300" src="https://ibox.co/300" alt="ibox" />
+    </div>
+
+    <form style="display: flex; flex-direction: column; gap: 16px; width: 100%">
+      <div>
+        <label for="title">Title Here: </label>
+        <span>Iphone 15</span>
+      </div>
+      <div>
+        <label for="description">Description: </label>
+        <span>Iphone 15 Basic Warna Pink</span>
+      </div>
+      <div>
+        <label for="account-number">Total Amount: </label>
+        <span> Rp. 15.000.000 </span>
+      </div>
+      <div>
+        <label for="bank">Pay to: </label>
+        <span> BRI 0999999837 </span>
+      </div>
+      <div>
+        <label for="bank">Payment type: </label>
+        <span> Ghosting </span>
+      </div>
+      <div>
+        <label for="bank">Account holder: </label>
+        <span> Fadil Orsy </span>
+      </div>
+      <div>
+        <label for="bank">Send to phone: </label>
+        <span>085000000000</span>
+      </div>
+      <div>
+        <label for="bank">Send to email: </label>
+        <span>dilmuh23@gmail.com</span>
+      </div>
+      <div>
+        <label for="bank">Account Holder: </label>
+        <span> Fadil Orsy </span>
+      </div>
+
+      <div style="display: flex; gap: 12px">
+        <div>
+          <input id="sent-to-phone" name="sent-to-phone" type="checkbox" checked />
+          <label for="sent-to-phone">Send to Mobile Phone</label>
+        </div>
+        <div>
+          <input id="sent-to-email" name="sent-to-email" type="checkbox" checked readonly />
+          <label for="sent-to-email">Send to Email</label>
+        </div>
+      </div>
+
+      <button type="submit" style="padding: 10px 16px; width: fit-content">
+        Done
+      </button>
+    </form>
+  </div>
+</body>
