@@ -1,0 +1,62 @@
+.flex{
+  display: flex;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.gap-8{
+  gap: 5px;
+}
+
+.square{
+  width: 100px;
+  height: 60px;
+}
+
+.fill{
+  flex: 1;
+}
+
+.tall{
+  height: 350px;
+}
+
+.full{
+  width: 100%;
+  height: 100px;
+}
+
+
+.green{
+  background-color: rgb(137, 220, 99);
+  border: 1px solid black;
+}
+
+.yellow{
+  background-color: rgb(243, 243, 23);
+  border: 1px solid black;
+}
+
+.red{
+  background-color: rgb(255, 75, 9);
+  border: 1px solid black;
+  height: 60px;
+}
+
+.lightblue{
+  background-color: rgb(85, 200, 238);
+  border: 1px solid black;
+}
+
+.gray{
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.blue{
+  background-color: blue;
+  border: 1px solid black;
+  height: 60px;
+}
