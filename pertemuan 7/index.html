@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 100pt;
+            color: white;
+        }
+
+        .box{
+            border: 2px solid black;
+        }
+        .satu{
+            background-color: red;
+            height: 300px;
+            width: 200px;
+        }
+
+        .dua{
+            background-color: rgb(0, 191, 255);
+            height: 300px;
+            width: 400px;
+        }
+
+        .tiga{
+            background-color: rgb(251, 255, 0);
+            height: 300px;
+            width: 400px;
+            order: 1;
+        }
+
+        .empat{
+            background-color: rgb(0, 81, 255);
+            height: 300px;
+            width: 200px;
+        }
+
+        .lima{
+            background-color: rgb(0, 106, 255);
+            height: 300px;
+            width: 200px;
+        }
+
+        .enam{
+            background-color: rgb(119, 0, 255);
+            height: 300px;
+            width: 200px;
+        }
+
+        .tujuh{
+            background-color: rgb(51, 255, 0);
+            height: 300px;
+            width: 200px;
+        }
+
+        #container{
+            display: flex;
+            gap: 10px;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box satu">1</div>
+        <div class="box dua">2</div>
+        <div class="box tiga">3</div>
+        <div class="box empat">4</div>
+        <div class="box lima">5</div>
+        <div class="box enam">6</div>
+        <div class="box tujuh">7</div>
+    </div>
+</body>
+</html>
