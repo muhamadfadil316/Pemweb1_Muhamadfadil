@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+form{
+    width: 300px;
+    height: 300px;
+    background: white;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 25px #02020233;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 7px 5px 2px #02020233;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #0000004d;
+}
+
+input::placeholder{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+button{
+    background: linear-gradient(to right, #f9ce34, #ee2a7b);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-top: 3px;
+    font-size: inherit;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 8px 2px 15px #0000004d;
+}

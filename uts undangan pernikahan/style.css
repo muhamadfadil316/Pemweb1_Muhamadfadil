@@ -1,0 +1,235 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1{
+    font-family: "Sacramento", serif;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.promo h1{
+    font-weight: bold;
+    font-family: "Sacramento", serif;
+}
+
+.promo {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.promo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.gettyimages.com/id/1250205745/photo/bride-and-groom-walking-on-pavements.jpg?s=612x612&w=0&k=20&c=JxU1ssjw6sZmmmn0Ox9MPXjGkLqL3DX3NKTVM9ArlXQ=);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.promo h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.promo p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    font-family: "Work Sans", serif;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.profile .description {
+    flex: 2;
+}
+
+.profile .description h2 {
+    color: #ff7e5f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+th {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+#form{
+    background-color: #ddd;
+    text-align: center;
+}
+
+.fm{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #feb47b;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.slider img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social a {
+    color: #ff7e5f;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #feb47b;
+}
+
+footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#developer {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #fdf4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#developer h2 {
+    color: #ff7e5f;
+}
+
+.login-button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #008c9e;
+  }
