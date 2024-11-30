@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <input type="submit" value="Login">
+        <input type="reset" value="Batal">
+    </form>
+
+    <!-- Program Javascript -->
+    <script>
+        function login(){
+            // Mengambil nilai username dan password dari form
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let form = document.getElementById("loginForm");
+
+            // Memeriksa apakah username dan password sesuai dengan yang
+            if(username == "orsy" && password == "123456789"){
+                alert("Yeeeeeee Login Berhasil huhuu");
+                form.setAttribute("action", "no1.html");
+            }else{
+                alert("Yahahaha Gagal, Yang teliti dong akang/neng!");
+            }
+        }
+    </script>
+</body>
+</html>
