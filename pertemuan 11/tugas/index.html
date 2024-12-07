@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .valid {
+            color: green;
+        }
+        .error-border {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form Pemesanan Tiket</h2>
+<form id="ticketForm">
+    <label for="nama">Nama Pelanggan:</label><br>
+    <input type="text" id="nama" name="nama" maxlength="30" required>
+    <span class="error" id="namaError"></span><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required>
+    <span class="error" id="emailError"></span><br><br>
+
+    <label for="jam">Jam Keberangkatan:</label><br>
+    <input type="text" id="jam" name="jam" placeholder="HH.MM" required>
+    <span class="error" id="jamError"></span><br><br>
+
+    <label for="tujuan">Tujuan Keberangkatan:</label><br>
+    <input type="text" id="tujuan" name="tujuan" required>
+    <span class="error" id="tujuanError"></span><br><br>
+
+    <label for="jumlah">Jumlah Tiket:</label><br>
+    <input type="number" id="jumlah" name="jumlah" min="1" max="10" required>
+    <span class="error" id="jumlahError"></span><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+document.getElementById('ticketForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const errors = document.querySelectorAll('.error');
+    errors.forEach(error => error.textContent = '');
+    
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach(input => input.classList.remove('error-border'));
+
+    let isValid = true;
+
+    const nama = document.getElementById('nama').value;
+    if (nama.length === 0 || nama.length > 30) {
+        document.getElementById('namaError').textContent = 'Nama harus diisi dan maksimum 30 karakter.';
+        document.getElementById('nama').classList.add('error-border');
+        isValid = false;
+    }
+
+    const email = document.getElementById('email').value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        document.getElementById('emailError').textContent = 'Email tidak valid.';
+        document.getElementById('email').classList.add('error-border');
+        isValid = false;
+    }
+
+    const jam = document.getElementById('jam').value;
+    const jamPattern = /^(2[0-3]|[01]?[0-9])\.[0-5][0-9]$/;
+    if (!jamPattern.test(jam)) {
+        document.getElementById('jamError').textContent = 'Jam harus dalam format HH.MM dan antara 00.00 - 23.59.';
+        document.getElementById('jam').classList.add('error-border');
+        isValid = false;
+    }
+
+    const tujuan = document.getElementById('tujuan').value;
+    if (tujuan.length === 0) {
+        document.getElementById('tujuanError').textContent = 'Tujuan harus diisi.';
+        document.getElementById('tujuan').classList.add('error-border');
+        isValid = false;
+    }
+
+    const jumlah = parseInt(document.getElementById('jumlah').value);
+    if (isNaN(jumlah) || jumlah < 1 || jumlah > 10) {
+        document.getElementById('jumlahError').textContent = 'Jumlah tiket harus antara 1 dan 10.';
+        document.getElementById('jumlah').classList.add('error-border');
+        isValid = false;
+    }
+
+    if (isValid) {
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `
+            <h3>Data Pemesanan:</h3>
+            <p>Nama Pelanggan: ${nama}</p>
+            <p>Email: ${email}</p>
+            <p>Jam Keberangkatan: ${jam}</p>
+            <p>Tujuan Keberangkatan: ${tujuan}</p>
+            <p>Jumlah Tiket: ${jumlah}</p>
+        `;
+        
+        document.getElementById('ticketForm').reset();
+        
+        errors.forEach(error => error.textContent = '');
+        
+        inputs.forEach(input => input.classList.remove('error-border'));
+        
+        resultDiv.classList.add('valid');
+        
+        resultDiv.scrollIntoView({ behavior: "smooth", block: "start"});
+        
+      }
+});
+</script>
+
+</body>
+</html>

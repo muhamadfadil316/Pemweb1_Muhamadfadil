@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganti Gambar</title>
+    <script>
+        function tampilGambar() {
+            // Ambil nilai yang dipilih dari dropdown
+            let nilaiTerpilih = document.getElementById("pilihGambar").value;
+            // Referensi elemen gambar
+            let gambar = document.getElementById("gambarTampil");
+
+            // Tentukan gambar berdasarkan pilihan
+            switch (nilaiTerpilih) {
+                case "Gambar1":
+                    gambar.src = "../img/iphone13.jpg";
+                    gambar.alt = "iPhone 13";
+                    break;
+                case "Gambar2":
+                    gambar.src = "../img/iphone15.jpg";
+                    gambar.alt = "iPhone 15";
+                    break;
+                case "Gambar3":
+                    gambar.src = "../img/iphone15pro.jpg";
+                    gambar.alt = "iPhone 14";
+                    break;
+                case "Gambar4":
+                    gambar.src = "../img/sepatu1.jpg";
+                    gambar.alt = "sepatu";
+                    break;
+                default:
+                    gambar.src = "";
+                    gambar.alt = "Gambar tidak tersedia";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Ganti Gambar</h2>
+    <label for="pilihGambar">Pilih Gambar:</label>
+    <select id="pilihGambar" onchange="tampilGambar()">
+        <option value="Gambar1">iPhone 13</option>
+        <option value="Gambar2">iPhone 15</option>
+        <option value="Gambar3">iPhone 14</option>
+        <option value="Gambar4">Sepatu</option>
+    </select>
+    <br><br>
+    <img src="../img/iphone13.jpg" id="gambarTampil" alt="iPhone 13" width="300">
+</body>
+</html>
