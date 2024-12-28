@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    font-family: "Sacramento", serif;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 2em;
+}
+
+nav a:hover {
+    background-color: cornflowerblue;
+}
+
+header {
+    font-family: "Sacramento", serif;
+    font-weight: bold;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.img1 {
+    background-color: #ccc;
+}
+
+.carousel-item img {
+    height: 300px; /* Sesuaikan tinggi gambar slider */
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.ttg {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-color: cornflowerblue;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.frm {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+}
+input, select, button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: lightblue;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.panel {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.panel h2 {
+    margin-top: 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    background: #eee;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.breadcrumb li {
+    margin-right: 10px;
+}
+.breadcrumb li a {
+    text-decoration: none;
+    color: #007bff;
+}
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+.breadcrumb li:last-child {
+    color: #555;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    background-color: #e9f7ef; /* Warna latar belakang yang lembut */
+    border: 1px solid #28a745; /* Border hijau */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Padding di dalam section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.contact-section h2 {
+    color: #28a745; /* Warna hijau untuk judul */
+}
+
+.contact-section ul {
+    padding-left: 20px; /* Jarak kiri untuk daftar */
+}
+
+.contact-section strong {
+    color: #155724; /* Warna hijau gelap untuk teks tebal */
+}
+
+
+@media (max-width: 768px) {
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
